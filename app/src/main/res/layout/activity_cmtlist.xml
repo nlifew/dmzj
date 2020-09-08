@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.nlifew.dmzj.ui.cmtlist.DismissView
+        android:layout_width="match_parent"
+        android:layout_height="150dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior=".ui.cmtlist.ScrollBehavior">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activity_cmtlist_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:theme="@style/AppTheme.PopupOverlay"
+            android:background="#cecece"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@drawable/ic_close_blue_grey_700_24dp"
+            tools:title="Title" />
+        <cn.nlifew.dmzj.widget.recyclerview.LoadMoreRecyclerView
+            android:id="@+id/activity_cmtlist_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

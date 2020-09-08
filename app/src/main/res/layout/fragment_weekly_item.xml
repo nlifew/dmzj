@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    app:cardCornerRadius="3dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <cn.nlifew.dmzj.widget.PercentImageView
+            android:id="@+id/fragment_weekly_item_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            app:alignSide="width"
+            app:alignPercent="0.4" />
+
+        <TextView
+            android:id="@+id/fragment_weekly_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@id/fragment_weekly_item_cover"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            tools:text="2020年8月11日"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/fragment_weekly_item_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/fragment_weekly_item_time"
+            android:layout_alignBottom="@id/fragment_weekly_item_time"
+            android:layout_toStartOf="@id/fragment_weekly_item_time"
+            android:layout_marginStart="15dp"
+            android:gravity="center_vertical"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="新漫周刊第90期 一周新漫推荐"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

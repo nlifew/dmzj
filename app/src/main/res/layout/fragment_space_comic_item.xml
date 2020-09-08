@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/fragment_space_comic_item_cover"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        tools:src="@drawable/ic_cover"/>
+
+    <Button
+        android:id="@+id/fragment_space_comic_item_reading"
+        android:layout_width="60dp"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/bg_space_comic_item_btn"
+        android:textColor="@android:color/white"
+        android:text="@string/reading"/>
+
+    <TextView
+        android:id="@+id/fragment_space_comic_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fragment_space_comic_item_cover"
+        android:layout_toStartOf="@id/fragment_space_comic_item_reading"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        tools:text="只要可爱即使是变态你也会喜欢的吧"/>
+
+    <TextView
+        android:id="@+id/fragment_space_comic_item_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/fragment_space_comic_item_title"
+        android:layout_alignEnd="@id/fragment_space_comic_item_title"
+        android:layout_alignBottom="@id/fragment_space_comic_item_cover"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="作者：花间灯"/>
+
+</RelativeLayout>

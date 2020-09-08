@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.space.SpaceActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true">
+        <cn.nlifew.dmzj.widget.ScrollCollapsedLayout
+            android:id="@+id/activity_space_collapsed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:contentScrim="@color/colorPrimary"
+            app:expandedTitleGravity="bottom|start"
+            app:expandedTitleMarginBottom="42dp"
+            app:expandedTitleMarginStart="102dp"
+            app:expandedTitleTextAppearance="@style/SpaceExpandedTextAppearance">
+
+            <ImageView
+                android:id="@+id/activity_space_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/bg_space"
+                app:layout_collapseMode="parallax"/>
+
+            <TextView
+                android:id="@+id/activity_space_sign"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|start"
+                android:layout_marginStart="100dp"
+                android:layout_marginBottom="20dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                tools:text="@string/nav_header_subtitle"/>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/activity_space_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:contentInsetStart="0dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin"
+                app:titleMarginStart="50dp"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_space_head"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/ic_account_circle_white_48dp"
+                android:layout_gravity="bottom|start"
+                android:layout_marginBottom="12dp"
+                android:layout_marginStart="28dp"
+                app:layout_collapseMode="none"
+                app:scrollEnabled="true"
+                app:collapsedWidth="35dp"
+                app:collapsedHeight="35dp"/>
+        </cn.nlifew.dmzj.widget.ScrollCollapsedLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/activity_space_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:tabPaddingStart="20dp"
+            app:tabPaddingEnd="20dp"/>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/activity_space_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--这个 NewsItemView 本质上就是个 RelativeLayout，
+    这里是实现根据 title 的行数自动调整间距。-->
+<cn.nlifew.dmzj.fragment.news.NewsItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp">
+
+    <ImageView
+        android:id="@+id/fragment_news_item_cover"
+        android:layout_width="112dp"
+        android:layout_height="84dp"
+        tools:scaleType="centerCrop"
+        tools:src="@drawable/ic_news" />
+
+    <TextView
+        android:id="@+id/fragment_news_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/fragment_news_item_cover"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="失联四川女大学生遗骸被找到"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fragment_news_item_head"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        tools:src="@drawable/ic_head_image"
+        android:layout_alignBottom="@id/fragment_news_item_cover"
+        android:layout_alignStart="@id/fragment_news_item_title"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/fragment_news_item_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/fragment_news_item_head"
+        android:layout_alignTop="@id/fragment_news_item_head"
+        android:layout_alignParentEnd="true"
+        android:drawableStart="@drawable/ic_comment_text_outline_grey600_18dp"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        tools:text="196"/>
+
+    <TextView
+        android:id="@+id/fragment_news_item_star"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toStartOf="@id/fragment_news_item_comment"
+        android:layout_alignTop="@id/fragment_news_item_head"
+        android:layout_alignBottom="@id/fragment_news_item_head"
+        android:layout_marginEnd="10dp"
+        android:drawableStart="@drawable/ic_thumb_up_outline_grey600_18dp"
+        android:drawablePadding="3dp"
+        android:gravity="center_vertical"
+        tools:text="535"/>
+
+    <TextView
+        android:id="@+id/fragment_news_item_author"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/fragment_news_item_head"
+        android:layout_toStartOf="@id/fragment_news_item_star"
+        android:layout_alignTop="@id/fragment_news_item_head"
+        android:layout_alignBottom="@id/fragment_news_item_head"
+        android:layout_marginStart="10dp"
+        android:gravity="center_vertical"
+        android:ellipsize="end"
+        tools:text="光明网"/>
+
+</cn.nlifew.dmzj.fragment.news.NewsItemView>

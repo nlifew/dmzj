@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fab_size_mini">40dp</dimen>
+
+    <dimen name="fab_icon_size">24dp</dimen>
+
+    <dimen name="fab_plus_icon_size">14dp</dimen>
+    <dimen name="fab_plus_icon_stroke">2dp</dimen>
+
+    <dimen name="fab_shadow_offset">3dp</dimen>
+    <dimen name="fab_shadow_radius">9dp</dimen>
+
+    <dimen name="fab_stroke_width">1dp</dimen>
+
+    <dimen name="fab_actions_spacing">16dp</dimen>
+    <dimen name="fab_labels_margin">8dp</dimen>
+
+    <dimen name="keyline_spacing">16dp</dimen>
+
+    <dimen name="fab_spacing">0dp</dimen>
+    <dimen name="fab_list_spacing">88dp</dimen>
+
+    <dimen name="progress_arc_stroke_width">2dp</dimen>
+    <dimen name="fab_content_size">24dp</dimen>
+    <dimen name="half_fab_content_size">12dp</dimen>
+    <dimen name="fab_translation_z_pressed">6dp</dimen>
+    <integer name="default_cycle_duration">2000</integer>
+    <dimen name="futuresimple_fab_shadow_offset">3dp</dimen>
+
+
+</resources>

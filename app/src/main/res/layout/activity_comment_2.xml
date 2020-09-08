@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    android:background="#f3f3f3">
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#efefef"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:translationZ="1dp">
+
+        <TextView
+            android:id="@+id/activity_comment_close"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/input_your_comment"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+            android:drawablePadding="5dp"
+            android:drawableStart="@drawable/ic_close_blue_grey_700_24dp"/>
+
+        <TextView
+            android:id="@+id/activity_comment_btn"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|center_vertical"
+            android:text="@string/submit_comment"
+            android:gravity="center"
+            android:background="@drawable/bg_comment_btn"/>
+    </FrameLayout>
+
+    <EditText
+        android:id="@+id/activity_comment_edit"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingTop="5dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:background="@null"
+        android:gravity="top|start"/>
+
+    <LinearLayout
+        android:id="@+id/activity_comment_images"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:orientation="horizontal"
+        android:background="#ececec">
+        <ImageView
+            android:id="@+id/activity_comment_image_add"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginEnd="10dp"
+            android:background="#dedede"
+            android:scaleType="center"
+            android:src="@drawable/ic_add_grey_700_24dp" />
+
+        <TextView
+            android:id="@+id/activity_comment_image_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/click_to_remove_picture" />
+    </LinearLayout>
+</LinearLayout>

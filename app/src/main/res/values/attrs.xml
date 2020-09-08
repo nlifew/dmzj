@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DismissLayout">
+        <attr name="dismissHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="ScrollCollapsedLayout_Layout">
+        <attr name="scrollEnabled" format="boolean" />
+
+        <attr name="collapsedGravity">
+            <flag name="top" value="0x30"/>
+            <flag name="bottom" value="0x50"/>
+            <flag name="left" value="0x03"/>
+            <flag name="right" value="0x05"/>
+            <flag name="center_vertical" value="0x10"/>
+            <flag name="fill_vertical" value="0x70"/>
+            <flag name="center_horizontal" value="0x01"/>
+            <flag name="center" value="0x11"/>
+            <flag name="start" value="0x00800003"/>
+            <flag name="end" value="0x00800005"/>
+        </attr>
+
+        <attr name="collapsedMargin" format="dimension"/>
+        <attr name="collapsedMarginStart" format="dimension"/>
+        <attr name="collapsedMarginTop" format="dimension"/>
+        <attr name="collapsedMarginEnd" format="dimension"/>
+        <attr name="collapsedMarginBottom" format="dimension"/>
+
+        <attr name="collapsedWidth" format="dimension" />
+        <attr name="collapsedHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SingleChoicePreference">
+        <attr name="entries" format="reference" />
+        <attr name="entryValues" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekBarPreference">
+        <attr name="minValue" format="integer" />
+        <attr name="maxValue" format="integer" />
+        <attr name="topText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PercentImageView">
+        <attr name="alignSide" format="enum">
+            <enum name="width" value="0x01" />
+            <enum name="height" value="0x02" />
+        </attr>
+        <attr name="alignPercent" format="float" />
+    </declare-styleable>
+
+
+    <declare-styleable name="ConstraintBehaviorLayout">
+        <attr name="layout_behavior" format="string" />
+    </declare-styleable>
+
+</resources>

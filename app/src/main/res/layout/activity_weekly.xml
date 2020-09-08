@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.weekly.WeeklyActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/activity_weekly_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/activity_weekly_collapsing"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/bg_detail_header"
+            app:contentScrim="@color/colorPrimary"
+            app:statusBarScrim="@color/colorPrimaryDark"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false" >
+            <TextView
+                android:id="@+id/activity_weekly_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                tools:text="新漫周刊第90期 一周新漫推荐"/>
+
+            <TextView
+                android:id="@+id/activity_weekly_subtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textColor="@android:color/white"
+                tools:text="24个漫画 - 8月18日"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="bottom">
+
+                <TextView
+                    android:id="@+id/activity_weekly_share"
+                    android:drawableTop="@drawable/ic_fenxiang_white_18dp"
+                    android:text="@string/share"
+                    style="@style/WeeklyHeaderTextAppearance"/>
+
+                <TextView
+                    android:id="@+id/activity_weekly_comment"
+                    android:drawableTop="@drawable/ic_comment_outline_white_narrow_margin_18dp"
+                    android:text="@string/comment"
+                    style="@style/WeeklyHeaderTextAppearance" />
+
+                <TextView
+                    android:id="@+id/activity_weekly_subscribe"
+                    android:drawableTop="@drawable/ic_shape_circle_plus_green_18dp"
+                    android:text="@string/subscribe"
+                    style="@style/WeeklyHeaderTextAppearance" />
+            </LinearLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/activity_weekly_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                app:layout_collapseMode="pin"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <FrameLayout
+        android:id="@+id/activity_weekly_host"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

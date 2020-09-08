@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fragment_detail_notice_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        tools:src="@drawable/ic_head_image"/>
+
+    <TextView
+        android:id="@+id/fragment_detail_notice_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/fragment_detail_notice_head"
+        android:layout_alignTop="@id/fragment_detail_notice_head"
+        android:layout_alignBottom="@id/fragment_detail_notice_head"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:gravity="start|top"
+        tools:text="被拔的小叶子" />
+
+    <TextView
+        android:id="@+id/fragment_detail_notice_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_detail_notice_name"
+        android:layout_alignStart="@id/fragment_detail_notice_name"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        tools:text="我的妈我是被书评骗进来的……作者明显表达能力不行女主就随便做个动作后边都跟着冷匪傲大佬霸气……各种形容词看着特别难受，目前女主给我的感觉就是没教养没礼貌长的好看没了……"/>
+
+    <GridLayout
+        android:id="@+id/fragment_detail_notice_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_detail_notice_text"
+        android:layout_alignStart="@id/fragment_detail_notice_text"
+        android:layout_alignEnd="@id/fragment_detail_notice_text"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/fragment_detail_notice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/fragment_detail_notice_images"
+        android:layout_alignStart="@id/fragment_detail_notice_name"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textSize="12sp"
+        tools:text="今天 15:15"/>
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<third-party>
+
+    <item name="Okhttp" author="square"
+        url="https://github.com/square/okhttp"
+        description="a HTTP &amp; HTTP/2 client for Android and Java applications" />
+
+    <item name="Retrofit" author="square"
+        url="https://github.com/square/retrofit"
+        description="Type-safe HTTP client for Android and Java by Square, Inc." />
+
+    <item name="Gson" author="Google"
+        url="https://github.com/google/gson"
+        description="A java serialization library that can convert Java Objects into JSON and back." />
+
+    <item name="Glide" author="bumptech"
+        url="https://github.com/bumptech/glide"
+        description="An image loading and caching library for Android focused on smooth scrolling." />
+
+    <item name="CircleImageView" author="hdodenhof"
+        url="https://github.com/hdodenhof/CircleImageView"
+        description="A circular ImageView for Android" />
+
+    <item name="FABProgressCircle" author="JorgeCastilloPrz"
+        url="https://github.com/JorgeCastilloPrz/FABProgressCircle"
+        description="Material progress circle around any FloatingActionButton. 100% Guidelines."/>
+
+    <item name="android-floating-action-button" author="zendesk"
+        url="https://github.com/zendesk/android-floating-action-button"
+        description="Floating Action Button for Android based on Material Design specification" />
+
+    <item name="MaterialLogin" author="fanrunqi"
+        url="https://github.com/fanrunqi/MaterialLogin"
+        description="Amazing Material Login effect" />
+    <item name="ScrollCollapsingLayout" author="nlifew"
+        url="https://github.com/nlifew/ScrollCollapsingLayout"
+        description="基于 CollapsingToolbarLayout 的可使子view同步移动的控件" />
+</third-party>

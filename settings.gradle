@@ -1,0 +1,2 @@
+include ':app', ':thirdparty', ':xdmzj'
+rootProject.name='dmzj'

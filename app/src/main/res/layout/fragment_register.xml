@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="320dp"
+    android:layout_height="320dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="15dp"
+    android:id="@+id/fragment_register_card"
+    app:cardBackgroundColor="#2ea67f"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:text="@string/register"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:theme="@style/RegisterTextLayoutStyle"
+            android:paddingStart="50dp"
+            android:paddingEnd="30dp"
+            android:textColorHint="#f0f7f4"
+            android:focusable="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_register_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:textColor="#f0f7f4"
+                android:background="@drawable/selector_bg_register_edit"
+                android:textCursorDrawable="@drawable/bg_register_input_cursor"
+                android:paddingBottom="2dp"
+                android:hint="@string/phone"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:maxLength="11"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_register_code"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="30dp"
+            android:textColorHint="#f0f7f4"
+            android:theme="@style/RegisterTextLayoutStyle">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="16sp"
+                android:textColor="#f0f7f4"
+                android:background="@drawable/selector_bg_register_edit"
+                android:textCursorDrawable="@drawable/bg_register_input_cursor"
+                android:paddingBottom="2dp"
+                android:hint="@string/sms_code"
+                android:inputType="numberDecimal"
+                android:imeOptions="actionDone"
+                android:maxLength="6"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/fragment_register_go"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/try_to_register"
+            android:textColor="#2fa881"
+            android:background="@drawable/bg_register_btn"
+            android:stateListAnimator="@drawable/selector_login_animator_z" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

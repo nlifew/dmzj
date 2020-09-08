@@ -1,0 +1,86 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.Light" parent="AppTheme.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="LoginTheme" parent="AppTheme.NoActionBar">
+        <item name="colorAccent">#2fa881</item>
+<!--        <item name="android:windowLightStatusBar">true</item>-->
+    </style>
+
+    <style name="RegisterTextLayoutStyle">
+        <item name="colorControlActivated">#FFCC00</item>
+    </style>
+
+    <style name="DetailExpandedTextAppearance">
+        <item name="android:textSize">20sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DetailFabLabelAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/bg_detail_fab</item>
+    </style>
+
+    <style name="TranslateBackground" parent="AppTheme.NoActionBar">
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <!--    注意：不要在这里设置背景颜色，会出现问题。用 java 代码设置    -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ComicHeaderStatusTextAppearance">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ComicHeaderKeyTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ComicHeaderValueStyle">
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical|end</item>
+        <item name="android:drawableEnd">@drawable/ic_keyboard_arrow_right_gray_24dp</item>
+    </style>
+
+    <style name="SpaceExpandedTextAppearance">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="WeeklyHeaderTextAppearance">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:onClick">onClick</item>
+    </style>
+
+</resources>

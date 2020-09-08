@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fragment_space_comment_head"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        tools:src="@drawable/ic_head_image"/>
+
+    <TextView
+        android:id="@+id/fragment_space_comment_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/fragment_space_comment_head"
+        android:layout_alignTop="@id/fragment_space_comment_head"
+        android:layout_alignBottom="@id/fragment_space_comment_head"
+        android:layout_marginStart="10dp"
+        android:textSize="12sp"
+        android:gravity="start|top"
+        tools:text="被拔的小叶子" />
+
+    <TextView
+        android:id="@+id/fragment_space_comment_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_space_comment_name"
+        android:layout_alignStart="@id/fragment_space_comment_name"
+        android:maxLines="5"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        tools:text="我的妈我是被书评骗进来的……作者明显表达能力不行女主就随便做个动作后边都跟着冷匪傲大佬霸气……各种形容词看着特别难受，目前女主给我的感觉就是没教养没礼貌长的好看没了……"/>
+
+    <TextView
+        android:id="@+id/fragment_space_comment_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fragment_space_comment_text"
+        android:layout_alignStart="@id/fragment_space_comment_name"
+        android:layout_marginTop="8dp"
+        android:padding="5dp"
+        android:textSize="10sp"
+        tools:text="关于我的前辈很烦人这件事"
+        android:background="#f5f5f5" />
+
+    <TextView
+        android:id="@+id/fragment_space_comment_star"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_below="@id/fragment_space_comment_from"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:drawableStart="@drawable/ic_thumb_up_outline_grey600_18dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        tools:text="赞"/>
+
+    <TextView
+        android:id="@+id/fragment_space_comment_reply"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/fragment_space_comment_star"
+        android:layout_alignBottom="@id/fragment_space_comment_star"
+        android:layout_toStartOf="@id/fragment_space_comment_star"
+        android:layout_marginEnd="15dp"
+        android:drawableStart="@drawable/ic_comment_text_outline_grey600_18dp"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        tools:text="评论" />
+
+    <TextView
+        android:id="@+id/fragment_space_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@id/fragment_space_comment_star"
+        android:layout_alignBottom="@id/fragment_space_comment_star"
+        android:layout_alignStart="@id/fragment_space_comment_name"
+        android:textSize="12sp"
+        android:gravity="center_vertical"
+        tools:text="今天 15:15" />
+
+</RelativeLayout>

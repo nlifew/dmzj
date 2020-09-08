@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.nlifew.dmzj.fragment.widget.HorizontalComicLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+
+
+    <ImageView
+        android:id="@+id/fragment_home_vertical_item_cover"
+        android:layout_width="66dp"
+        android:layout_height="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/ic_cover"/>
+
+    <TextView
+        android:id="@+id/fragment_home_vertical_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/fragment_home_vertical_item_cover"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:maxLines="2"
+        android:ellipsize="end"
+        tools:text="只要可爱即使是变态你也会喜欢我吧" />
+
+    <TextView
+        android:id="@+id/fragment_home_vertical_item_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_home_vertical_item_title"
+        app:layout_constraintStart_toStartOf="@id/fragment_home_vertical_item_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        tools:text="爱情/校园/轻小说"/>
+
+    <TextView
+        android:id="@+id/fragment_home_vertical_item_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fragment_home_vertical_item_about"
+        app:layout_constraintStart_toStartOf="@id/fragment_home_vertical_item_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        tools:text="作者：CHuN/花间灯/iimAn"/>
+
+</cn.nlifew.dmzj.fragment.widget.HorizontalComicLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_login_card"
+    android:layout_width="300dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="50dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/bg_login_title"
+            android:text="@string/login"
+            android:textColor="#FFCC00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="30dp"
+            android:textColorHint="#c5c5c5">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_login_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_login_edit"
+                android:textCursorDrawable="@drawable/bg_login_input_cursor"
+                android:paddingBottom="2dp"
+                android:textSize="18sp"
+                android:textColor="#2fa881"
+                android:hint="@string/username"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="30dp"
+            android:textColorHint="#c5c5c5"
+            app:passwordToggleEnabled="true">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fragment_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_bg_login_edit"
+                android:textCursorDrawable="@drawable/bg_login_input_cursor"
+                android:paddingBottom="2dp"
+                android:textSize="18sp"
+                android:textColor="#2fa881"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:imeOptions="actionDone"
+                android:maxLines="1"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/fragment_login_go"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/try_to_login"
+            android:textColor="#d3d3d3"
+            android:background="@drawable/bg_login_btn"
+            android:stateListAnimator="@drawable/selector_login_animator_z" />
+
+        <TextView
+            android:id="@+id/fragment_login_forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#9a9a9a"
+            android:textSize="12sp"
+            android:text="@string/forgot_your_password" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
